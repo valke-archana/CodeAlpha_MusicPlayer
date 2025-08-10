@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,intial-scale=1.0"/>
+        <title>Muisc Player</title>
+        <link rel="stylesheet" href="music.css">
+    </head>
+    <body>
+        <header>
+            <img src="playlist.svg" alt="playlist" id="playlist-img">
+            <h1> FEEL THE MUSIC</h1>
+            <img src="music.svg" alt="music" id="music-img">
+        </header>
+        <div class="main">
+            <div class="left">
+                <div class="song-image">
+                </div>
+                <div class="volume-div">
+                    <div id="volume-img">
+                        <img src="voulme.svg" alt="volume" id="vol-svg">
+                    </div>
+                    <input type="range" id="volume-range" onchange="volume()">
+                    
+                </div>
+            </div>
+            <div class="right">
+                <div class="details">
+                    <h1 id="song-name"> song1</h1>
+                    <p id="song-artist"> song1 Artist</p>
+                </div>
+                <input type="range" id="song-duaration" onchange="duration()">
+                <div class="controls">
+                    <div class="prev-img">
+                        <img src="previous.svg" alt="previous" id="prev-img" onclick="previousSong()">
+                    </div>
+                    <div class="play-pause">
+                        <img src="play.svg" alt="play" id="play-pause" onclick="playPause()">
+                    </div>
+                    <div class="next-img">
+                        <img src="next.svg" alt="next" id="next-img" onclick="nextSong()">
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="playlist-song">
+                    <img src="music_images/image-1.jpg" alt="img">
+                    <div class="song-details">
+                        <h3>Krishna flute</h3>
+                        <h5>Shri Krishna</h5>
+                    </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="music_images/image-2.jpg" alt="img">
+                    <div class="song-details">
+                        <h3>Believer</h3>
+                        <h5>Imagine Dragons</h5>
+                    </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="music_images/image-3.jpg" alt="img">
+                    <div class="song-details">
+                        <h3>Gaaju Bomma</h3>
+                        <h5>Hesham Abdul Wahab</h5>
+                    </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="music_images/image-4.jpg" alt="img">
+                    <div class="song-details">
+                        <h3>Mari Anthaga</h3>
+                        <h5>Sreerama Chandra</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="music.js"></script>
+    </body>
+
+</html>
+    
